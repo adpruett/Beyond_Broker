@@ -1,0 +1,138 @@
+		  		<!-- Buyers/Sellers Path Tabs -->
+						 <div id="search">
+						  <ul class="nav nav-tabs sTabs pathTabs" role="tablist">
+						    <!-- Sellers tab -->
+						    <li role="presentation" class="active">
+						    	<a href="#seller" aria-controls="seller" role="tab" data-toggle="tab">Sellers
+						    	</a>
+						    </li>
+						    <!-- Buyers tab -->
+						    <li role="presentation">
+						    	<a href="#buyer" aria-controls="buyer" role="tab" data-toggle="tab">Buyers
+						    	</a>
+						    </li>
+						  </ul>
+
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						  	<!-- sellers pane -->
+						    <div role="tabpanel" class="tab-pane active" id="seller">
+							    
+						    <!-- Path after selecting either Seller or Buyer -->
+							    <ul class="nav nav-tabs popoverTabs" role="tablist">
+								    <!-- Sellers tab -->
+								    <li role="presentation" class="active">
+								    	
+								    	<a tabindex="0" id="sellerListing" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" data-html="true" 
+								    	data-content="<div class='popover'>
+								    	<span>
+								    	<img src='assets/img/icons/camera.png'><div>Photography</div></span>
+								    	<span><img src='assets/img/icons/camera.png'><div>Photography</div></span></span>
+								    	<span><img src='assets/img/icons/camera.png'><div>Photography</div></span></span>
+								    	</div>"  
+								    	data-placement="auto bottom">Listing</a>
+
+								    	<span id=blackArrow class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+								    </li>
+								    <!-- Buyers tab -->
+								    <li role="presentation">
+								    	<a tabindex="0" id="sellerMarketing" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" data-html="true" 
+								    	data-content="<div class='popover'>
+								    	<span>
+								    	<img src='assets/img/icons/camera.png'><div>Photography</div></span>
+								    	<span><img src='assets/img/icons/camera.png'><div>Photography</div></span></span>
+								    	<span><img src='assets/img/icons/camera.png'><div>Photography</div></span></span>
+								    	</div>"  
+								    	data-placement="auto bottom">Listing</a>
+
+								    	<span id=blackArrow class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+								    </li>
+						  		</ul>
+									<p class="sButton">
+		        				
+		        				<a class="btn btn-lg btn-primary sButton" href="../../components/#navbar" role="button">Get Started</a>
+		        			</p>
+		        		</div>
+						    <!-- buyers pane -->
+						    <div role="tabpanel" class="tab-pane" id="buyer">
+						    	<p>
+			        			<input id="autocomplete" class="sInput" placeholder="Enter a city" type="text">
+									</p>
+									<p class="sButton">
+		        				
+		        				<a class="btn btn-lg btn-primary sButton" href="../../components/#navbar" role="button">Search For Homes</a>
+		        			</p>
+		        		</div>
+		        	</div>
+		        </div>
+
+
+		        <!-- CSS -->
+
+		        .popover {
+	width: 400px;
+	color: black;
+	display: inline-block;
+}
+
+.popover span{
+	margin: 15px 5px;
+	float: left;
+	text-align: center
+}
+
+.popover img{
+	width: 35px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+
+
+.popoverTabs {
+	border: none;
+	margin: 5px auto 30px auto;
+}
+
+.popoverTabs li{
+	float:none;
+	display: inline-block;
+	text-shadow: none;
+}
+
+.popoverTabs li a{
+	font-size: 20px;
+	background-color: #BDBDBD;
+	color: white;
+	font-weight: 200;
+	border:none;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.popoverTabs li a:hover{
+	background-color: #BDBDBD;
+	border: none;
+}
+
+.popoverTabs li.active a{
+	background-color: #FFFFFF;
+	border: none;
+	color: black;
+	font-weight: 200;
+	text-decoration: underline;
+
+
+}
+
+.popoverTabs li.active a:hover, .popoverTabs li.active a:focus{
+	background-color: #FF795C;
+	border: none;
+	color: white;
+	cursor:pointer;
+}
+
+.popoverTabs li.active #sSelected{
+	display: block;
+	visibility: visible;
+}
